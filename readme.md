@@ -6,3 +6,5 @@ Get weather by zip code:
  - humidity
  - feels like
  - city
+
+API key gets stored in an application.properties file that isn't included for security reasons.
