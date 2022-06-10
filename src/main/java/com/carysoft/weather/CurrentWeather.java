@@ -23,17 +23,10 @@ public class CurrentWeather {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public BigDecimal getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(BigDecimal temperature) {
-        this.temperature = temperature;
-    }
 
     @Override
     public boolean equals(Object o) {

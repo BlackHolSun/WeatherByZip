@@ -26,8 +26,8 @@ public class WeatherController {
     }
 
     @PostMapping("/")
-    public String postHomeView(Model model, @RequestParam String reqZipForm){
-        model.addAttribute("currentWeather", weatherService.getCurrentWeather(reqZipForm));
+    public String postHomeView(Model model, @RequestParam String reqZip){
+        model.addAttribute("currentWeather", weatherService.getCurrentWeather(reqZip));
         return "index";
     }
 

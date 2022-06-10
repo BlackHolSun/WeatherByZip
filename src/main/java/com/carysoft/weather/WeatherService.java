@@ -28,6 +28,8 @@ public class WeatherService {
         this.objectMapper = objectMapper;
     }
 
+
+
     public CurrentWeather getCurrentWeather(String zip){
         URI url = new UriTemplate(WEATHER_URL).expand(zip, apiKey);
         ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
